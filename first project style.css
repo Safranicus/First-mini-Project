@@ -1,0 +1,124 @@
+html, body {
+    margin: 0; /*this removes all default spacing*/
+    padding: 0; /*this removes all default spacing*/
+    background-color: rgb(146, 142, 142);
+}
+
+.top-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /*not sure what this does exactly but it should crop the image so that it fits without stretching*/
+    display: block; /*this removes the gap that images have below them*/
+}
+
+#header {
+    text-align: center;
+    font-size: 4em;
+    top: 55%;
+}
+
+.intro-wrapper {
+    height: 200px;
+    position: relative;
+}
+
+hr {
+    height: 8px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 2px solid black;
+    background-color: darkolivegreen;
+}
+
+        /* i am not sure about this part, curious if its possible with a more simplified solution*/
+.intro {
+    border: 2px solid black;
+    background-color: darkolivegreen;
+    color: blanchedalmond;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute; /*this is taking the intro box out of the normal flow, so we can place it exactly where we want*/
+    top: 74%; /*this should move it further down from the header*/
+    left: 50%; /*this positions my div 50% from the left edge of the page/container*/
+    transform: translate(-50%, -50%); /*this moves my div back, so it is centered - see "top, left"*/
+    text-align: center;
+    width: 50%; /*this makes my div to take up 50% of the page/container width*/
+    padding: 20px;
+}
+
+.span-section {
+    font-size: 2em;
+    display: flex; /*this lines up my spans in a row across the screen, otherwise they wouldnt use the whole screen*/
+    justify-content: space-evenly; /*this spreads my spans evenly across the full width of the site*/
+    margin: 20px;
+}
+.span-section a {
+    text-decoration: none;
+    color: black;
+}
+
+.span-section a:hover {
+    color: darkolivegreen; /*with this the text changes color when hovering with the mouse*/
+}
+
+.quotes-section {
+    display: flex; /*this should put all my quotes in a row*/
+    justify-content: space-evenly; /*like above in the span section, this spaces it out evenly*/
+    flex-wrap: wrap; /*this allows quotes to wrap to the next line on smaller screens*/
+}
+
+.quote {
+    color: blanchedalmond;
+    border: 2px solid black;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    margin-bottom: 20px; /*just for when more content gets added below*/
+    background-color: rgb(6, 49, 85);
+}
+
+.quote .author {
+    color: black;
+    font-weight: bold;
+    display: block; /*i wanted all authors on a new line*/
+    margin-top: 10px; /*creates some space between the quote itself and the author*/
+}
+
+#external-links {
+    text-align: center;
+}
+
+.space-links a {
+    font-size: 1.2em;
+}
+
+.space-links ul li a {
+    text-decoration: none;
+    color: rgb(49, 63, 25);
+}
+
+.space-links ul li {
+    list-style-position: inside; /*since the bullets/dots seem to be outside the textbox by default, this places them inside*/
+    text-align: center;
+}
+
+#vid {
+    text-align: center;
+}
+
+.embedded-video {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+table {
+    border: 3px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+table input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
