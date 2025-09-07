@@ -71,7 +71,8 @@
                 <iframe src="https://www.youtube.com/embed/S_GZnYRj1ro?si=fX7QH7jp7f6EACYu" frameborder="0" width="1000" height="600" allowfullscreen></iframe>
             </div>
 
-        <table border="1">
+        <form action="">
+            <table border="1">
             <thead>
                 <tr>
                     <th><label for="firstname">First Name</label></th>
@@ -84,14 +85,35 @@
                 <tr>
                     <td><input type="text" name="firstname" id="firstname" placeholder="First Name"></td>
                     <td><input type="text" name="lastname" id="lastname" placeholder="Last Name"></td>
-                    <td><input type="number" name="age" id="age" placeholder="age"></td>
-                    <td><input type="text" name="game" id="favouritegame" placeholder="Favourite Game"></td>
+                    <td><input type="number" name="age" id="age" placeholder="Age"></td>
+                    <td>
+                        <select name="favouritegame" id="favouritegame">
+                            <option value="">--Select a game--</option>
+                            <option value="x4">X4: Foundations</option>
+                            <option value="Space Engine">Space Engine</option>
+                            <option value="Stellaris">Stellaris</option>
+                            <option value="No Man`s Sky">No Man`s Sky</option>
+                            <option value="Elite Dangerous">Elite Dangerous</option>
+                            <option value="Star Citizen">Star Citizen</option>
+                        </select>
+                    </td>
                 </tr>
             </tbody>
         </table>
+        <br>
+                        <input type="submit" value="Submit" id="submit">
+        </form>
 <br>
 <br>
 <br>
-<br>  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </body>
 </html>

@@ -5,6 +5,7 @@ html, body {
 }
 
 .top-image {
+    border-bottom: 2px solid black;
     width: 100%;
     height: 500px;
     object-fit: cover; /*not sure what this does exactly but it should crop the image so that it fits without stretching*/
@@ -51,6 +52,7 @@ hr {
     justify-content: space-evenly; /*this spreads my spans evenly across the full width of the site*/
     margin: 20px;
 }
+
 .span-section a {
     text-decoration: none;
     color: black;
@@ -117,8 +119,15 @@ table {
     text-align: center;
 }
 
-table input {
+table input, table select {
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
+}
+
+#submit {
+    display: block;
+    padding: 40px;
+    margin: 50px auto 0;
+    font-size: 36px; 
 }
